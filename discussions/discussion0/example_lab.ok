@@ -1,11 +1,11 @@
 {
-  "name": "Homework 1: Causality and Expressions",
+  "name": "Discussion 1",
   "endpoint": "ucsd/dsc10/fa17/example_lab",
   "src": [
     "Example_Lab.ipynb"
   ],
   "tests": {
-      "tests/q*.py": "ok_test"
+      "tests/q1.py": "ok_test"
   },
   "protocols": [
       "file_contents",
