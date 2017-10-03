@@ -1,0 +1,15 @@
+{
+  "name": "Project 1, Part 2",
+  "endpoint": "ucsd/cse91/fa17/project1part1",
+  "src": [
+    "project1part1.ipynb"
+  ],
+  "tests": {
+      "tests/q*.py": "ok_test"
+  },
+  "protocols": [
+      "file_contents",
+      "grading",
+      "backup"
+  ]
+}
