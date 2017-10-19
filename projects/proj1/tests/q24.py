@@ -14,7 +14,8 @@ test = {
         },
         {
           'code': r"""
-          >>> district_data.sort(0).take([0, 1, 2])
+          >>> district_data.sort(0).take([0, 1, 2]).num_rows > 0
+          True
           """,
           'hidden': False,
           'locked': False
