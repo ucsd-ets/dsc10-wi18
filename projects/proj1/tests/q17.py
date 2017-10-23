@@ -6,7 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> high_average_zips.sort('ZIP').take([0, 1, 2]).select('ZIP')
+          >>> high_average_zips.sort('ZIP').take([0, 1, 2]).select('ZIP').num_rows > 0
+          True
           """,
           'hidden': False,
           'locked': False
