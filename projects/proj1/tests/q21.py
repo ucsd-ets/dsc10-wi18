@@ -6,7 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> per_capita_usage.sort(0).relabeled(1, 'V').take([0, 1, 2])
+          >>> per_capita_usage.sort(0).relabeled(1, 'V').take([0, 1, 2]).num_rows > 0
+          True
           """,
           'hidden': False,
           'locked': False
