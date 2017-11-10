@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> type(winnings) == np.float64
+          >>> 'float' in str(type(winnings))
           True
           """,
           'hidden': False,

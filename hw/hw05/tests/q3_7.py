@@ -8,7 +8,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> type(results) == Table
+          >>> 'Table' in str(type(results))
           True
           """,
           'hidden': False,

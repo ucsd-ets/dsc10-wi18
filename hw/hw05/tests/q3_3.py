@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> type(TVD) == np.float64 and TVD > 0
+          >>> 'float' in str(type(TVD)) # == np.float64 and TVD > 0
           True
           """,
           'hidden': False,

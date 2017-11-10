@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> len(flips) == 1000
+          >>> len(flips) == 1000 or len(flips) == 10000
           True
           """,
           'hidden': False,

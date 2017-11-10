@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> type(random_beer_table) == Table
+          >>> 'Table' in str(type(random_beer_table))
           True
           """,
           'hidden': False,

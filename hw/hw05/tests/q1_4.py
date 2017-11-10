@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> isinstance(final_sample_size, int)
+          >>> 'int' in str(type(final_sample_size)) #isinstance(final_sample_size, int)
           True
           """,
           'hidden': False,
