@@ -6,6 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
+          >>> # Correctness checks for age_bins
           >>> old = full_data.with_column('Age', full_data.column('Age')*3)
           >>> np.max(histograms(old)[0]) == np.max(old.column('Age')) + 1
           True
@@ -17,6 +18,7 @@ test = {
         },
         {
           'code': r"""
+          >>> # Correctness checks for salary_bins
           >>> np.max(histograms(full_data)[1]) > np.max(full_data.column('Salary'))
           True
           >>> np.min(histograms(full_data)[1]) == np.min(full_data.column('Salary'))
