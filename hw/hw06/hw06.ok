@@ -1,6 +1,6 @@
 {
   "name": "Homework 6: Confidence Intervals and Sample Size",
-  "endpoint": "uscd/dsc10/fa17/hw06",
+  "endpoint": "ucsd/dsc10/fa17/hw06",
   "src": [
     "hw06.ipynb"
   ],
