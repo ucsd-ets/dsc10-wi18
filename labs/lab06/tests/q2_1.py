@@ -6,10 +6,11 @@ test = {
       'cases': [
         {
           'code': r"""
+          >>> # Correctness checks for age_bins
           >>> old = full_data.with_column('Age', full_data.column('Age')*3)
-          >>> np.max(age_bins(old)) == np.max(old.column('Age')) + 1
+          >>> np.max(histograms(old)[0]) == np.max(old.column('Age')) + 1
           True
-          >>> np.min(age_bins(old)) == np.min(old.column('Age'))
+          >>> np.min(histograms(old)[0]) == np.min(old.column('Age'))
           True
           """,
           'hidden': False,
@@ -17,9 +18,10 @@ test = {
         },
         {
           'code': r"""
-          >>> np.max(salary_bins(full_data)) > np.max(full_data.column('Salary'))
+          >>> # Correctness checks for salary_bins
+          >>> np.max(histograms(full_data)[1]) > np.max(full_data.column('Salary'))
           True
-          >>> np.min(salary_bins(full_data)) == np.min(full_data.column('Salary'))
+          >>> np.min(histograms(full_data)[1]) == np.min(full_data.column('Salary'))
           True
           """,
           'hidden': False,

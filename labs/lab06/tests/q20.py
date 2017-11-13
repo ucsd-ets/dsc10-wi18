@@ -7,7 +7,7 @@ test = {
         {
           'code': r"""
           >>> old = full_data.with_column('Age', full_data.column('Age')*3)
-          >>> np.max(histograms(old)) > np.max(old.column('Age'))
+          >>> np.max(histograms(old)[0]) > np.max(old.column('Age'))
           True
           """,
           'hidden': False,
