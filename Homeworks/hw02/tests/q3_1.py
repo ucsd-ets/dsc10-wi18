@@ -7,7 +7,7 @@ test = {
         {
           'code': r"""
           >>> import numpy
-          >>> isinstance(third_element, numpy.int64)
+          >>> isinstance(third_element, numpy.int64) or isinstance(third_element, int)
           True
           """,
           'hidden': False,
