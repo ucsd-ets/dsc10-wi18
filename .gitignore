@@ -4,3 +4,5 @@ __pycache__/
 
 .ok_messages
 .ok_storage
+.DS_Store
+.ok_storage.db
