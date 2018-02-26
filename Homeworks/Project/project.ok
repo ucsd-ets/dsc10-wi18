@@ -1,0 +1,16 @@
+{
+  "name": "Project",
+  "endpoint": "ucsd/dsc10/wi18/project",
+  "src": [
+  "project.ipynb"
+  ],
+  "tests": {
+      "tests/q*.py": "ok_test"
+  },
+  "protocols": [
+      "file_contents",
+      "grading",
+      "backup"
+  ]
+}
+    
